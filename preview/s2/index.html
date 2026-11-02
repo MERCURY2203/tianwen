@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+  <meta name="theme-color" content="#24263a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <script>
+    // 去雾试验（预览版）：状态栏样式按「排查面板」里选的方案来，存在本机
+    (function () {
+      var m = '0'; try { m = localStorage.getItem('xsj-sbmode') || '2'; } catch (e) {}
+      var styles = { '0': 'black-translucent', '1': 'default', '2': 'black', '3': 'black-translucent' };
+      document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').setAttribute('content', styles[m] || 'black-translucent');
+      document.documentElement.setAttribute('data-sb', m);
+    })();
+  </script>
+  <meta name="apple-mobile-web-app-title" content="迟叙机" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>迟叙机</title>
+  <link rel="stylesheet" href="assets/app-AHQXNLEJ.css" />
+</head>
+<body>
+  <div id="root"></div>
+  <noscript>需要开启浏览器的 JavaScript 才能使用迟叙机。</noscript>
+  <script type="module" src="assets/app-ORUYSNY2.js"></script>
+</body>
+</html>
